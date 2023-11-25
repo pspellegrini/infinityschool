@@ -21,7 +21,7 @@ class Mamifero(Animal):
     def __init__(self, nome: str, idade: int, peso: float, tem_pelo: bool = True) -> None:
         super().__init__(nome, idade, peso)
         self.tem_pelo = tem_pelo
-
+              
 class Ave(Animal):
     def __init__(self, nome: str, idade: int, peso: float, voar: bool = True) -> None:
         super().__init__(nome, idade, peso)
