@@ -1,0 +1,7 @@
+CREATE TABLE `sheep_alunos` (
+  `id_matricula` int(11) NOT NULL,
+  `nome` varchar(120) NOT NULL,
+  `data_nascimento` date NOT NULL,
+  `endereco` varchar(120) NOT NULL,
+  PRIMARY KEY (`id_matricula`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci

@@ -1,0 +1,28 @@
+https://dontpad.com/dfs713
+
+EMAIL DO PROJETO: projetossa@infinityschool.com.br
+
+ACESSO AO WORKBENCH DA ESCOLA:
+
+HOST: sql812.main-hosting.eu
+USERNAME: u274908554_713A
+SENHA: INbd713A
+
+CREATE TABLE ew_alunos(
+	id_aluno INT NOT NULL AUTO_INCREMENT unique primary key ,
+    nome varchar(50) not null,
+    nascimento date not null
+    );
+CREATE TABLE ew_cursos(
+	id_curso INT NOT NULL AUTO_INCREMENT unique primary key,
+    nome_curso varchar(50) not null,
+    carga_horaria time not null
+    );
+create table ew_matriculas(
+	id_matricula int not null unique auto_increment primary key,
+    id_aluno int not null,
+    id_curso int not null, 
+    data_matricula date not null,
+    foreign key (id_aluno) references ew_alunos(id_aluno),
+    foreign key (id_curso) references ew_cursos(id_curso)
+    );

@@ -1,0 +1,7 @@
+CREATE TABLE `sheep_produtos` (
+  `id_produto` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_produto` varchar(120) NOT NULL,
+  `preco` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`id_produto`),
+  CONSTRAINT `CONSTRAINT_1` CHECK (`preco` > 0)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
