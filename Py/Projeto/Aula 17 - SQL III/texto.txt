@@ -1,0 +1,88 @@
+USE u274908554_713A;
+
+CREATE TABLE sheep_curso_2024 (
+id_curso int(11) NOT NULL UNIQUE AUTO_INCREMENT,
+nome_curso varchar(120) NOT NULL,
+data_inicio date NOT NULL,
+tota_aulas int(2) NOT NULL,
+ano YEAR NOT NULL,
+PRIMARY KEY (id_curso)
+);
+
+CREATE TABLE sheep_alunos_2024 (
+id_aluno int(11) NOT NULL UNIQUE AUTO_INCREMENT,
+nome_aluno VARCHAR(120) NOT NULL,
+profissao VARCHAR(120) NOT NULL,
+data_nascimento DATE NOT NULL,
+sexo VARCHAR(1) NOT NULL,
+peso DECIMAL(3) NOT NULL,
+altura DECIMAL(3) NOT NULL,
+PRIMARY KEY (id_aluno)
+);
+
+INSERT INTO sheep_curso_2024 (nome_curso, data_inicio, tota_aulas, ano) VALUES
+("Full Stack", 2024-01-01, 40, 2024),
+("PowerBI", 2024-01-15, 10, 2024);
+
+ALTER TABLE sheep_curso_2024
+RENAME COLUMN tota_aulas to total_aulas;
+
+INSERT INTO sheep_alunos_2024 (nome_aluno, profissao, data_nascimento, sexo, peso, altura) VALUES
+('Paulo Pellegrini', 'Administrador', 1987-05-29, 'M', 91.3, 1.74);
+
+SELECT * FROM sheep_curso_2024;
+
+SELECT COUNT(DISTINCT nome_aluno) FROM sheep_alunos_2024;
+
+select * from sheep_curso_2024 order by data_inicio asc;
+
+select nome_aluno as Nome, profissao as Profissão from sheep_alunos_2024;
+
+select sheep_curso_2024.nome_curso as Nome_curso, sheep_alunos_2024.nome_aluno as Nome from sheep_curso_2024
+INNER JOIN sheep_alunos_2024 on sheep_alunos_2024.id_aluno = sheep_curso_2024.id_curso;
+
+select sheep_curso_2024.nome_curso as Nome_curso, sheep_alunos_2024.nome_aluno as Nome from sheep_curso_2024
+left join sheep_alunos_2024 on sheep_alunos_2024.id_aluno = sheep_curso_2024.id_curso;
+
+create table sheep_pessoas (
+id_pessoa INT NOT NULL UNIQUE auto_increment primary key,
+nome varchar(120) not null,
+data_nascimento date not null
+);
+
+create table sheep_documentos (
+id_documento INT not null unique auto_increment primary key,
+numero_documento int(11) not null unique,
+tipo_documento varchar(3) not null,
+id_pessoa int,
+foreign key (id_pessoa) references sheep_pessoas(id_pessoa)
+);
+
+create table sheep_departamento (
+id_departamento int not null unique auto_increment primary key,
+nome_departamento varchar(120) not null unique,
+localização varchar(120) not null
+);
+
+create table sheep_colaboradores (
+id_colaborador int not null unique auto_increment primary key,
+nome_colaborador varchar(120) not null,
+salario decimal(10, 2) not null,
+id_departamento int,
+foreign key (id_departamento) references sheep_departamento (id_departamento)
+);
+
+insert into sheep_departamento (nome_departamento, localização) values
+("SRL", "Salvador"),
+("DM", "Feira de Santana"),
+("DS", "Amargosa");
+
+insert into sheep_colaboradores (nome_colaborador, salario, id_departamento) values
+("Paulo", 10000, 1),
+("Filipe", 2500, 1),
+("Caio", 4000, 2),
+("Tiago", 1930.50, 3);
+
+SELECT * FROM sheep_departamento;
+
+select * from sheep_colaboradores;

@@ -1,0 +1,11 @@
+CREATE TABLE `sheep_matricula` (
+  `id_matricula` int(11) NOT NULL AUTO_INCREMENT,
+  `id_aluno` int(11) NOT NULL,
+  `id_curso` int(11) NOT NULL,
+  `data_matricula` date NOT NULL,
+  PRIMARY KEY (`id_matricula`),
+  KEY `id_aluno` (`id_aluno`),
+  KEY `id_curso` (`id_curso`),
+  CONSTRAINT `sheep_matricula_ibfk_1` FOREIGN KEY (`id_aluno`) REFERENCES `sheep_alunos` (`id_matricula`),
+  CONSTRAINT `sheep_matricula_ibfk_2` FOREIGN KEY (`id_curso`) REFERENCES `sheep_cursos` (`id_curso`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci

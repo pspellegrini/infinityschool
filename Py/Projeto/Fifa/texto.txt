@@ -1,0 +1,56 @@
+Deve ser possível cadastrar:
+    > Times (classe)
+    > Jogadores (classe)
+    > Comissão técnica (classe)
+
+
+Time:
+    Nome do time
+    Cidade
+    Nome do Mascote
+
+Jogadores:
+    Nome
+    Time que atua
+    Número da Camisa
+
+Comissão:
+    Técnico
+    Auxiliar
+    Preparador Físico
+
+
+
+class Time:
+    def __init__(self, nome_time: str, cidade: str, mascote: str) -> None:
+        self.nome_time = nome_time
+        self.cidade = cidade
+        self.mascote = mascote
+
+
+class Jogadores(Time):
+    def __init__(self, nome_jogador: str, num_camisa: int) -> None:
+        super().__init__(nome_time)
+        self.nom_jogador = nome_jogador
+        self.num_camisa = num_camisa
+
+class Comissão(Time):
+    ...
+
+class Tecnico(Time, Comissão)
+    def __init__(self, nome_tecnico: str, esq_tatico: str) -> None:
+        super().__init__(nome_time)
+        self.nome_tecnico = nome_tecnico
+        self.esq_tatico = esq_tatico
+    
+    def coletiva(self):
+        return f'O técnico {self.nome_tecnico} está dando uma coletiva de imprensa.'
+
+class Auxiliar(Time, Comissão)
+    def __init__(self, nome_auxiliar: str, esq_tatico: str) -> None:
+        super().__init__(nome_time)
+        self.nome_auxiliar = nome_auxiliar
+        self.esq_tatico = esq_tatico
+    
+    def coletiva(self):
+        return f'O auxiliar {self.nome_auxiliar} está dando uma coletiva de imprensa.'

@@ -1,0 +1,21 @@
+#VS Code#
+
+1. Abrir executor powershell
+
+Executar
+'python -m venv .venv
+.venv/Scripts/activate
+pip install mysql-connector-python
+pip freeze > requirements.txt'
+
+Obs: Caso seja necessário fazer update 'python.exe -m pip install --upgrade pip'
+
+#MySQL#
+
+create table usuarios(
+    nome
+    e-mail
+    senha
+);
+
+https://dontpad.com/dfs713-projeto

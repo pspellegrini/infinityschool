@@ -1,0 +1,8 @@
+CREATE TABLE `sheep_funcionarios` (
+  `id_funcionario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) NOT NULL,
+  `data_entrada` date NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_funcionario`),
+  UNIQUE KEY `id_funcionario_UNIQUE` (`id_funcionario`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci

@@ -1,0 +1,7 @@
+CREATE TABLE `sheep_cliente` (
+  `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_cliente` varchar(120) NOT NULL,
+  `email` varchar(120) NOT NULL,
+  PRIMARY KEY (`id_cliente`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci

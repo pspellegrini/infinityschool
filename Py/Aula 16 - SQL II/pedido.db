@@ -1,0 +1,8 @@
+CREATE TABLE `sheep_pedido` (
+  `id_pedido` int(11) NOT NULL AUTO_INCREMENT,
+  `id_cliente` int(11) DEFAULT NULL,
+  `data_pedido` date NOT NULL,
+  PRIMARY KEY (`id_pedido`),
+  KEY `id_cliente` (`id_cliente`),
+  CONSTRAINT `sheep_pedido_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `sheep_cliente` (`id_cliente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
