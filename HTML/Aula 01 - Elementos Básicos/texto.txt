@@ -1,0 +1,25 @@
+Extensões
+1. Code Runner
+2. Dracula
+3. Live Server
+4. Prettier
+5. vscode-icons
+
+
+ATIVIDADE PRÁTICA
+
+Crie uma página HTML com diferentes níveis de cabeçalhos
+e parágrafos.
+
+Instruções:
+1. Crie um documento HTML.
+
+2. Adicione um cabeçalho principal (<h1>) com o título "Minha Primeira Página HTML".
+
+3. Abaixo do cabeçalho principal, adicione um cabeçalho secundário (<h2>) com o título "Sobre Mim".
+
+4. Após o cabeçalho secundário, insira um parágrafo (<p>) descrevendo brevemente sobre você.
+
+5. Adicione outro cabeçalho secundário (<h2>) com o título "Meus Hobbies".
+
+6. Inclua um parágrafo descrevendo seus hobbies.
