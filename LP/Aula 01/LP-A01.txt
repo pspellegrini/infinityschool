@@ -1,0 +1,104 @@
+[LP-A01] Qual das opções abaixo melhor ilustra uma ação que pode ser parte de um algoritmo:
+
+a) beber água
+b) dormir
+c) tomar banho
+d) estudar
+e) todas as opções anteriores
+
+
+[LP-A01] Qual das alternativas abaixo representa corretamente a sintaxe de uma variável em python?
+
+a) (nome = "João"
+b) 1idade = 12
+c) True = True
+d) cEp = '41.340-100'
+e) falso = false
+
+
+Explicação
+d) cEp = '41.340-100': Nesta sintaxe, uma variável chamada "cEp" está sendo declarada e atribuída com o valor '41.340-100'. Em Python, o nome de uma variável deve começar com uma letra (maiúscula ou minúscula) seguido por letras, dígitos ou sublinhados. É importante observar que o Python é sensível a maiúsculas e minúsculas, então "cEp" é diferente de "cep".
+
+a) (nome = "João": Os parênteses não são necessários e podem causar um erro de sintaxe.
+
+b) 1idade = 12: Começar o nome de uma variável com um número é inválido.
+
+c) True = True: "True" é uma palavra reservada em Python e não pode ser usada como o nome de uma variável.
+
+e) falso = false: "false" é uma palavra reservada em Python, mas deve ser escrita com a primeira letra minúscula ("False") para representar o valor booleano falso.
+
+
+[LP-A01] Qual das opções abaixo representa o comportamento do sinal "=" em python:
+
+a) igualdade
+b) atribuição
+c) comparação
+d) diferença
+e) negação
+
+Explicação
+b) atribuição: Em Python, o sinal "=" é utilizado para atribuir um valor a uma variável. Ele indica que o valor à direita do sinal será atribuído à variável à esquerda.
+
+
+[LP-A01] Qual das linhas de código abaixo está correta em python para a seguinte expressão:
+
+4² ÷ 30 = 
+
+a) resultado = 4*2 * 30
+b) resultado = 4**2 / 30
+c) resultado = 4**2 * 30
+d) resultado = 4**2 % 30
+e) resultado = 4^2 / 30
+
+
+[LP-A01] Qual das linhas de código abaixo está correta em python para a seguinte expressão:
+
+10 + 20 x 30 = 610
+
+a) resultado = 10+20x30)
+b) resultado = (10+20x30
+c) resultado = 10+”20x30”
+d) resultado = 10+(20x30)
+e) resultado = “10+(20x30”
+
+
+[LP-A01] Qual das alternativas abaixo escreve corretamente um código em pyhton que calcula a soma de três variáveis e imprime o resultado delas na tela?
+
+
+a)
+x = 10
+y = 20
+z = 30
+soma = x + y + z
+
+
+b)
+x = 10
+y = 20
+z = 30
+soma = x + y + z
+print("O resultado da soma é: ", soma)
+
+
+c)
+x = 10
+y = 20
+z = 30
+soma = x + y + z
+print("O resultado da soma é, soma”)
+
+
+d)
+x = 10
+y = 20
+z = 30
+soma = x * y * z
+print("O resultado da soma é:", soma)
+
+
+e)
+x = 10
+y = 20
+z = 30
+soma = x - y + z
+print("O resultado da soma é " , str(soma))

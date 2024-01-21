@@ -1,0 +1,173 @@
+[LP-A02] Qual das alternativas abaixo representa corretamente a verificação de duas condições com operadores lógicos em Python?
+
+
+a)
+if condicao1 or and condicao2:
+    codigo_verdadeiro
+else:
+    codigo_falso
+
+b)
+if condicao1 and or condicao2:
+    codigo_verdadeiro
+else:
+    codigo_falso
+
+c)
+if condicao1 or condicao2:
+    codigo_verdadeiro
+else:
+    codigo_falso
+
+d)
+if condicao1 and condicao2:
+    codigo_verdadeiro
+else:
+    codigo_falso
+
+e)
+if condicao1 xor condicao2:
+    codigo_verdadeiro
+else:
+    codigo_falso
+
+
+[LP-A02] Qual das alternativas abaixo representa corretamente a estrutura de controle condicional "if-else" em Python para verificar se um número é par ou ímpar?
+
+a)
+numero = 10
+if numeros % 2 == 0:
+    print("O número é par")
+elif numeros % 2 == 1:
+    print("O número é ímpar")
+else:
+    print("Número inválido")
+
+b)
+numeros = 10
+
+if numero % 2 == 0:
+    print("O número é par")
+else if numero % 2 == 1:
+    print("O número é ímpar")
+else:
+    print("Número inválido")
+
+c)
+numero = 10
+if numero % 2 == 0:
+print("O número é par")
+else if numero % 2 != 0:
+    print("O número é ímpar")
+else:
+    print("Número inválido")
+
+d)
+numero = 10
+if numero % 2 != 0:
+    print("O número é par")
+else if numero % 2 != 0:
+    print("O número é ímpar")
+
+e)
+numero = 10
+if numero % 2 == 0:
+    print("O número é par")
+else:
+    print("O número é ímpar")
+
+
+[LP-A02] Qual das alternativas abaixo representa a correta utilização das estruturas de decisão em python?
+
+
+a) Utilizar o operador lógico "||" para fazer uma comparação entre duas variáveis em uma estrutura "if-else".
+
+
+b) Utilizar um único "if" para verificar várias condições distintas em um bloco de código.
+
+
+c) Utilizar "if" sem "else" para tratar apenas uma das possíveis condições em uma estrutura condicional.
+
+
+d) Utilizar o operador "==" para fazer uma atribuição de valor em uma estrutura "if-else".
+
+
+e) Utilizar "if-elif-else" para tratar diferentes cenários e condições exclusivas em uma estrutura condicional.
+
+
+[LP-A02] Qual das alternativas abaixo representa a correta utilização das estruturas de decisão em python?
+
+a)
+x = 10
+if x > 5
+    print("x é maior que 5")
+else
+    print("x é menor ou igual a 5")
+
+
+b)
+x = 10
+if x > 5:
+    print("x é maior que 5")
+else if x < 5:
+    print("x é menor que 5")
+else:
+    print("x é igual a 5")
+
+
+c)
+x = 10
+if x > 5
+    print("x é maior que 5")
+else:
+    print("x é menor que 5")
+
+
+d)
+x = 10
+if x > 5
+    print("x é maior que 5")
+elif x == 5:
+    print("x é igual a 5")
+else
+    print("x é menor que 5")
+
+
+e)
+x = 10
+if x > 5:
+    print("x é maior que 5")
+else:
+    print("x é menor que 5")
+
+
+[LP-A02] De acordo com o código abaixo, escolha a opção que representa o que aconteceria se o primeiro e o segundo valor fossem iguais.
+
+a = int(input("Primeiro valor: "))
+b = int(input("Digite o segundo número"))
+if a > b:
+    print("O primeiro valor é maior!")
+if b > a:
+    print("O segundo valor é o maior!")
+
+a) Seria impressa a mensagem "O primeiro valor é maior!".
+b) Seria impressa a mensagem "O segundo valor é o maior!".
+c) Não seria impressa nenhuma mensagem.
+d) Seria exibida uma mensagem de erro de sintaxe.
+e) O programa entraria em um loop infinito.
+
+
+[LP-A02] Qual a melhor descrição para o que está errado no código abaixo:
+
+x=10
+if x < 5
+    print("True")
+
+a) Apenas erro de sintaxe
+b) Apenas erro de lógica
+c) Erro de lógica e de sintaxe
+d) Erro de indentação e lógica
+e) Apenas erro de indentação
+
+Explicação
+c) Erro de lógica e de sintaxe: O código apresenta dois erros. Primeiro, há um erro de sintaxe na linha que contém o condicional "if". Faltou um sinal de dois pontos (:) para indicar o início do bloco de código que será executado se a condição for verdadeira. Além disso, há um erro de lógica, pois a condição "x < 5" não é verdadeira, então o comando "print("True")" não será executado de qualquer maneira. Portanto, a opção correta é a letra c).

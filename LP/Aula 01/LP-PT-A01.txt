@@ -1,0 +1,123 @@
+Exercícios Complementares Portugol Condicional e Repetição
+
+
+[LP-PT-A01]Sobre lógica da programação, marque a alternativa CORRETA.
+
+I - Algoritmo é uma lista de instruções que precisam ser seguidas para realizar uma tarefa específica.
+
+II - Um algoritmo possui somente a entrada de dados e a saída dos dados.
+
+III - Entrada é quando o programa recebe somente informações do usuário.
+
+IV - Descrição Narrativa, Fluxograma e Pseudocódigo são tipos de algoritmo.
+
+V - Processamento de dados é a manipulação das informação que o programa recebe.
+
+
+a) Apenas I
+b) II, V e III
+c) III e IV
+d) Apenas V
+e) I e IV
+
+Gabarito:
+e) I e IV 
+
+
+
+[LP-PT-A01]Sobre descrição narrativa e variável, marque a alternativa CORRETA.
+
+
+a) Não é possível reutilizar variáveis em diferentes partes do programa sem precisar digitar as informações novamente.
+b) Variável é um espaço reservado na memória do computador para armazenar informações temporariamente.  
+c) A descrição narrativa é uma forma de escrever em linguagem de programação, como se fosse uma história, as instruções que um programa deve seguir para realizar uma tarefa.  
+d) Não é possível fazer operações aritméticas com nenhum tipo de variável.
+e) A descrição narrativa é um dos tipos de algoritmos menos utilizados.
+
+Gabarito:
+b) Variável é um espaço reservado na memória do computador para armazenar informações temporariamente.  
+
+
+
+[LP-PT-A01]Sobre Fluxograma e Pseudocódigo, marque a alternativa INCORRETA.
+
+
+a) Um Fluxograma é uma ferramenta muito útil para ilustrar como as instruções de um programa se relacionam. Pseudocódigo é como se fosse uma descrição narrativa do algoritmo, mas com uma estrutura mais formal e organizada.
+b) Um Fluxograma é uma representação visual de um algoritmo ou processo. Pseudocódigo é uma forma de escrever um algoritmo em linguagem de máquina.
+c) Um Fluxograma facilita a compreensão do fluxo de informações de um programa. É possível fazer um pseudocódigo para calcular a média de duas notas.
+d) Fluxograma é um dos tipos de algoritmo mais utilizados. O Pseudocódigo não é uma ferramenta para ilustrar como as instruções de um programa se relacionam.
+e) O Fluxograma não é descrição narrativa do algoritmo. Pseudocódigo é um dos tipos de algoritmo mais utilizados.
+
+Gabarito:
+d) Fluxograma é um dos tipos de algoritmo mais utilizados. O Pseudocódigo não é uma ferramenta para ilustrar como as instruções de um programa se relacionam.
+
+
+
+[LP-PT-A01]Em Portugol, existem três tipos principais de variáveis:
+
+Variáveis inteiras
+Variáveis reais
+Variáveis caracteres
+SOBRE A EXPLICAÇÃO ACIMA é CORRETO afirmar:
+
+
+a) A explicação está incorreta, pois não existem variáveis caracteres.
+b) As variáveis caracteres armazenam múltiplos caracteres.
+c) Na linguagem Portugol, variáveis reais são definidas usando a palavra-chave "real".
+d) Variáveis lógicas não podem armazenar valores verdadeiros ou falsos.
+e) Variáveis inteiras: armazenam valores numéricos inteiros, somente negativos.
+
+Gabarito:
+c) Na linguagem Portugol, variáveis reais são definidas usando a palavra-chave "real".
+
+
+
+[LP-PT-A01]Analise o código a baixo:
+
+programa {
+    funcao inicio() {
+        inteiro numero
+    escreva("Digite um número entre 1 e 10 e encontre o número secreto: ")
+    leia(numero)
+    enquanto (numero != 3) faca
+        se (numero <= 10) entao
+            escreva("Esse número está fora do escopo!")
+        fimse
+
+    escreva("Esse não é o número correto! Tente novamente!")
+
+    escreva("Digite um número: ")
+    leia(numero)
+    fimenquanto
+    escreva("Fim do programa.")
+ }
+}
+
+Qual trecho de código corrige o erro no código acima?
+O escopo é entre 1 e 10
+
+a) se (numero != 10) entao
+            escreva("Esse número está fora do escopo!")
+        fimse
+
+b)se (numero < 10) entao
+            escreva("Esse número está fora do escopo!")
+        fimse
+
+c) se (numero > 10) entao
+            escreva("Esse número está fora do escopo!")
+        fimse
+
+d) se (numero == 10) entao
+            escreva("Esse número está fora do escopo!")
+        fimse
+
+e) se (numero >= 10) entao
+            escreva("Esse número está fora do escopo!")
+        fimse
+
+Gabarito:
+c) se (numero > 10) entao
+
+            escreva("Esse número está fora do escopo!")
+        fimse

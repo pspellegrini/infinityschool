@@ -1,0 +1,88 @@
+Exercícios Complementares Python Condicionais
+[LP-PY-A02] Qual das alternativas a seguir possui uma afirmação CORRETA sobre o Python?
+
+a) O Python não é uma linguagem interpretada.
+b) O Python é uma linguagem multiparadigma.
+c) O Python é uma linguagem de baixo nível.
+d) O Python não é uma linguagem de tipagem dinâmica.
+e) O Python não é uma linguagem multiparadigma.
+
+Gabarito:
+b) O Python é uma linguagem multiparadigma.
+
+
+
+[LP-PY-A02] Marque a alternativa em quê a variável está escrita corretamente.
+
+a) 4goritimo = 5
+b) v4ri_avel = 1
+c) 7rogr6ma2ca0 = 9
+d) Pyt.on = 2
+e)  p0r_tu g0l = 3
+
+Gabarito:
+b) v4ri_avel = 1
+
+
+
+[LP-PY-A02] Qual alternativa representa esse teste logico a baixo?
+print(True or False and not False)
+
+a) False
+b) True
+c) error syntax
+d) None
+e) nenhuma das alternativas
+
+Gabarito:
+b) True
+
+
+
+[LP-PY-A02]Sobre os tipos de variáveis marque a alternativa INCORRETA.
+
+a) bool: são variáveis capazes de conter 2 de 2 valores: verdadeiro ou falso (booleano).
+b) int: guardam números inteiros.
+c) str: guardam informações de texto.
+d) float: guardam números de ponto flutuante.
+e) str: guardam informações de texto também de um único caractere.
+
+Gabarito:
+a) bool: são variáveis capazes de conter 2 de 2 valores: verdadeiro ou falso (booleano).
+
+
+
+[LP-PY-A02]O format() é um dos métodos de formatação de string em Python. Este método permite várias substituições e formatação de valor, com ele é possível concatenar elementos em uma string por meio da formatação posicional.
+
+A F-string foi introduzida no python 3.6 e também é chamada de ?strings literais formatadas? (formatted string literals).
+
+Tendo em vista as seguintes afirmações, marque a alternativa em quê a sintaxe está CORRETA.
+
+a) print(f'O seu nome é {nome}.')
+b) print('Olá {}!É um prazer te conhecer.'.form(nome))
+c) print('O seu nome é: {nome}.'.format())
+d) print(f'Olá! É um prazer te conhecer, {}.', nome)
+e) print('É um prazer te conhecer, {nome}.'.f())
+
+Gabarito:
+a) print(f'O seu nome é {nome}.')
+
+
+
+[LP-PY-A02] Levando em consideração o código abaixo:
+x = 4
+if x == 4:
+    print("x é igual a 4")
+else:
+    print("x é diferente de 4")
+
+Marque a alternativa CORRETA.
+
+a) O trecho if x == 4: poderia ser substituído por if 4 = x: e ainda estaria correto.
+b) Caso o else fosse retirado do código, o programa somaria 1 + 1.
+c) O resultado imprimido por print("x é == a 4") é: "x é igual a 4"
+d) A atribuição da variável x = 4 está incorreta, o correto é x == 4
+e) O trecho else: print("x é diferente de 4") poderia ser substituído por: elif x != 4: print("x é diferente de 4")
+
+Gabarito:
+e) O trecho else: print("x é diferente de 4") poderia ser substituído por: elif x != 4: print("x é diferente de 4")
