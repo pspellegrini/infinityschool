@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scalet=1.0">
+    <title>Formulário: Atividade Prática 03</title>
+</head>
+
+<body>
+    <form action="#">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome:<input type="text" name="nome" /></label><br/>
+        <label>Idade:<input type="text" name="idade" /></label><br/>
+        <label>Endereço:<input type="text" name="endereço" /></label><br/>
+        <label>Cidade: <input type="text" name="cidade" /></label><br/>
+        <label for="estado">Estado:</label><br/>
+        <select id="estado" name="estado">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select><br/>
+    </fieldset>
+    <br/>
+
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>Escolaridade:
+        <select name="Escolaridade">
+            <option value="em"> Ensino Médio</option>
+            <option value="nt"> Nível Técnico</option>
+            <option value="ns"> Nível Superior</option>
+        </select>
+        </label>
+        <br/>
+        <br>
+        <label>Área de atuação<br>
+            <input type="radio" name="cargo" value="1"> Gerência
+            <input type="radio" name="cargo" value="2"> Financeiro
+            <input type="radio" name="cargo" value="3"> Recepção
+            <input type="radio" name="cargo" value="4"> Administrativo
+            <input type="radio" name="cargo" value="5"> Jurídico
+        </label>
+        <br/>
+        <br>
+        <label>Aréa de Interesse
+            <br>
+            <input type="checkbox" name="Interesse" value="1"> Computação
+            <input type="checkbox" name="Interesse" value="2"> Biologia
+            <input type="checkbox" name="Interesse" value="3"> Meio Ambiente
+            <input type="checkbox" name="Interesse" value="4"> Engenharia
+            <input type="checkbox" name="Interesse" value="5"> História
+        </label>
+        <br/>
+        <br>
+        <label for="message">Mini-curriculo:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        </fieldset>
+    <br/>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </form>
+</body>

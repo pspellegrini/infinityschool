@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scalet=1.0">
+    <title>Formulário: Atividade Prática 02</title>
+</head>
+
+<body>
+    <form action="#">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome:<input type="text" name="nome" /></label><br/>
+        <label>Idade:<input type="text" name="idade" /></label><br/>
+    </fieldset>
+    <br/>
+
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>Escolaridade:
+        <select name="Escolaridade">
+            <option value="em"> Ensino Médio</option>
+            <option value="nt"> Nível Técnico</option>
+            <option value="ns"> Nível Superior</option>
+        </select>
+        </label>
+        <br/>
+        <label>Área de atuação
+            <input type="radio" name="cargo" value="1" checked> Gerência
+            <input type="radio" name="cargo" value="2"> Financeiro
+            <input type="radio" name="cargo" value="3"> Recepção
+        </label>
+    </fieldset>
+    <br/>
+    <input type="submit" value="Enviar">
+    </form>
+</body>

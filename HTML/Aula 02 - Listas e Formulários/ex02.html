@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scalet=1.0">
+    <title>Formulário: Atividade Prática</title>
+</head>
+
+<body>
+<h2>ATIVIDADE PRÁTICA</h2>
+
+<ol>
+<li>Crie o Formulário:</li>
+<ul><li>Utilize a tag "< form >" para iniciar o formulário.</li></ul>  
+<ul><li>Defina o atributo action como "#" e method como "post" para este exercício. (Em um cenário real, esses atributos seriam configurados para enviar os dados a um servidor.)</li></ul>
+
+<ul><li>Adicione Campos de Entrada:
+<ul><li>Campo de Nome: Use "< input type="text" >" para criar um campo onde o usuário pode digitar seu nome.</li>
+<li>Campo de Email: Adicione um campo para o email com "< input type="email" >".</li>
+<li>Área de Mensagem: Inclua uma área de texto para comentários com "< textarea >"".</li>
+<il>Inclua um Botão de Envio: Adicione um botão de envio ao formulário usando "< input type="submit" >" ou "< button type="submit" >".</il>    
+<il>Adicione Rótulos aos Campos: Use a tag "< label >" para adicionar rótulos descritivos a cada campo de entrada.</li>
+</ul>
+</li>
+</ul>
+</ol>
+
+<h2>RESPOSTA</h2>
+    <form action="post">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Deixe seu comentário</legend>
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</body>
