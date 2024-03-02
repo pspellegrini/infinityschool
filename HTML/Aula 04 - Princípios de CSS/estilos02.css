@@ -1,0 +1,11 @@
+.container p{
+    color: blue;
+}
+
+.container > p:first-child, .sub-container > p:first-child{
+    background-color: red;
+}
+
+.sub-container p{
+    font-style: italic;
+}

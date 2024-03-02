@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header{
+    background-color: rgb(80, 48, 71);
+    text-align: center;
+    padding: 20px;
+    color: #e3e5d7;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav{
+    background-color: rgba(91, 68, 80, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f6eddc;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100hv - 180px);   
+}
+
+section{
+    background-color: #ffffff;
+    color: #253342;
+    padding: 20px;
+}
+
+h2{
+    color: #C05746;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal; 
+    line-height: 3;
+}
+
+p{
+    color: #586875;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: initial;
+    line-height: 2;
+}
+
+footer{
+    background-color: #D0E3C4;
+    color: #C05746;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+}

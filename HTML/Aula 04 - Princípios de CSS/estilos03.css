@@ -1,0 +1,16 @@
+#bloco h1{
+    text-align: center;
+}
+
+.destaque{
+    text-shadow: 2px 2px 2px gray;
+}
+
+#bloco p{
+    line-height: 1.5;
+}
+
+.link{
+    color: green;
+    text-decoration: none;
+}
