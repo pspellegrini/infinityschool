@@ -1,0 +1,16 @@
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+https://getbootstrap.com/docs/5.3/components/buttons/
+https://www.color-hex.com/color-palette/1042433
+https://rgbacolorpicker.com/hex-to-rgba
+
+
+DESAFIO
+
+O objetivo do desafio consiste em você utilizar o que foi aprendido na aula de hoje para implementar uma Página Insitucional de uma empresa ficticia focando principalmente na “Hero Section”. Sua página deve conter:
+
+Um Banner
+Um Titulo com o nome da empresa
+Um breve paragrafo explicando a proposta
+Um botão para uma chamada para a ação (call to action)
+
+Utilize sua criatividade para implementar a página da maneira que achar melhor. Segue wireframe de referência no slide seguinte.

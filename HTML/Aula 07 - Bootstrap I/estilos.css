@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #394240;
+}
+
+header{
+    background-color: rgb(57,66,64);
+    padding: 50px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 2500px;
+}
+
+#passauna{
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+}
+
+nav{
+    background-color: rgba(57, 66, 64, 1);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100hv - 180px);   
+}
+
+.sub-container{
+    background-color: #394240;
+    color: #ffffff;;
+    padding: 20px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+}
+
+section{
+    background-color: #394240;
+    color: #ffffff;
+    padding: 20px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    line-height: normal;
+}
+
+footer{
+    background-color: #394240;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+}
