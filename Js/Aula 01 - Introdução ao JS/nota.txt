@@ -1,0 +1,49 @@
+Faça um algoritmo que permita atravessar uma rua:
+
+1. Identificar a rua que será atravessada
+2. Identificar se a rua tem semaforo
+3. Identificar se a rua tem faixa de pedestre
+4. Observar se a rua apresenta algum obstaculo para atravessar
+5. Olhar para direita para identificar se vem movimento
+6. Olhar para esquerda para identificar se vem movimento
+7. Atravessar a rua
+
+//tipos de dados
+
+"conjunto de textos" - string
+123456789 - number
+1.2 - decimal
+true || false - boleano ou boolean
+undefined - indefinido
+null - vazio
+
+//variáveis
+
+var - declara uma variável, como visto anteriormente.
+let - declara uma variável com escopo de bloco.
+const - declara uma variável com escopo de bloco, que não pode ser reatribuida.
+
+let velocidade = 14
+velocidade = 14
+
+velocidade = 16
+
+const velocidadeConstante = 27
+velocidadeConstante = 32
+
+
+console.log('Olá, mundo!')
+console.log(velocidade)
+console.log(velocidadeConstante)
+
+//entrada de dados
+prompt()
+
+
+//operadores aritméticos
+2 + 2 = 4 - Soma
+2 - 2 = 0 - Subtração
+2 * 2 = 4 - Multiplicação
+2 / 2 = 1 - Divisão
+2 ** 2 = 4 - Exponenciação
+2 % 2 = 0 - Módulo ou Resto
