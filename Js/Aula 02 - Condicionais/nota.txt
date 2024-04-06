@@ -1,0 +1,28 @@
+01. Operador de comparação
+
+    {>} Maior que - Verifica se um valor é maior que outro.
+    {>=} Maior igual - Verifica se um valor é maior ou igual ao outro.
+    {<} Menor que - Verifica se um valor é menor que outro.
+    {<=} Menor igual - Verifica se um valor é menor ou igual ao outro.
+    {==} Igualdade abstrata - Verifica se um valor é igual ao outro.
+    {===} Igualdade estrita - Verifica se o valor e tipo são iguais.
+    {!=} Diferença abstrata - Verifica se um valor é diferente de outro.
+    {!==} Diferença estrita - Verifica se o valor ou tipo são diferentes.
+
+
+02. Condicionais
+
+    {if} é a forma mais básica de uma estrutura condicional. Ela avalia uma condição e executa um bloco de código se a condição for verdadeira (ou seja, seu valor é true).
+
+    {else} é usada junto com o if e/ou else if. Se todas as condições anteriores forem falsas, o bloco de código associado ao else será executado.
+
+    {else if} é usada quando você quer verificar mais de uma condição, além da condição inicial do if. Se a condição do if não for verdadeira, o código verificará a condição do else if subsequente e, se essa condição for verdadeira, executará o bloco de código associado.
+
+
+03. Operadores Lógicos
+
+    {&& - AND - E} recebe dois operandos e retorna verdadeiro se, e somente se ambos os operandos sejam verdadeiros. Retorna falso, caso contrário.
+
+    {|| - OR - Ou} retornar verdadeiro, basta que um dos operandos seja verdadeiro. Ele também retorna verdadeiro caso os dois operandos sejam verdadeiros. Retorna falso, se os dois forem falsos.
+
+    {! - NOT - Não} é um operando unário, isto é, opera sobre apenas um operando. Ele nega, inverte o valor lógico do operando.
