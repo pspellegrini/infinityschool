@@ -1,0 +1,5 @@
+if(condicao) {
+    codigo executado caso verdadeiro
+} else if (outraCondicao) {
+    outro código
+}
