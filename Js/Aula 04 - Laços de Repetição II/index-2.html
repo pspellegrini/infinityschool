@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .minhaClasse {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p id="texto"></p>
+
+    <script>
+        const elementoParagrafo = document.getElementById('texto')
+
+        elementoParagrafo.textContent = "Olá, mundo!"
+        elementoParagrafo.style.backgroundColor = "#FF0000"
+        elementoParagrafo.classList.add('minhaClasse')
+    </script>
+</body>
+</html>
