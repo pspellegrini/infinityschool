@@ -10,3 +10,8 @@
 // - Sair
 
 // Crie a funcionalidade para cada uma dessas opções e repita o programa até que o usuário selecionar a opção sair.
+
+function pedirNome() {
+  const nome = prompt("Digite seu nome: ")
+  console.log(nome)
+}
