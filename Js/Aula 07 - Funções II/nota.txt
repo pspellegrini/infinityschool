@@ -1,0 +1,196 @@
+https://dontpad.com/inf713-1105
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="paragrafo"></p>
+
+    <input id="entrada-nome" type="text">
+    <button id="botao-imprimir">Imprimir</button>
+    
+    <script>
+        const entradaNome = document.getElementById("entrada-nome")
+        const elementoBotao = document.getElementById("botao-imprimir")
+        const elementoParagrafo = document.getElementById("paragrafo")
+        // console.log(elementoParagrafo)
+        // elementoParagrafo.textContent = "Olá, mundo!"
+
+        // function imprimirOlá() {
+        //     console.log("Olá!")
+        // }
+
+        function imprimirValorInput() {
+            const valor = entradaNome.value
+            console.log(valor)
+        }
+        
+        // elementoBotao.addEventListener("click", () => console.log("olá!"))
+
+        elementoBotao.addEventListener("click", imprimirValorInput)
+
+        // console.log()
+    </script>
+</body>
+</html>
+
+===================================================================
+
+CALLBACK
+
+function saudacao(funcaoCallback) {
+    const nome = prompt("Digite seu nome: ")
+
+    const resultado = funcaoCallback(nome)
+
+    console.log(resultado)
+}
+
+function bemVindo(nome) {
+    const mensagem = `Seja bem-vindo, ${nome}!`
+    return mensagem
+}
+
+function boaTarde(nome) {
+    return `Boa tarde, ${nome}!`
+}
+
+saudacao(bemVindo)
+
+saudacao(boaTarde)
+
+=================================================================
+
+EX01
+
+CRIE UMA FUNÇÃO DE CALCULADORA
+	- ESSA FUNÇÃO DEVE RECEBER COMO CALLBACK UMA FUNÇÃO DE OPERAÇÃO ARTIMÉTICA
+	- ESSA FUNÇÃO DEVE PEDIR AO USUÁRIO DOIS NÚMEROS
+	- DEPOIS DISSO, ELA DEVE EXECUTAR A FUNÇÃO CALLBACK PASSANDO OS DOIS NÚMEROS COMO ARGUMENTO
+	- IMPRIMA EM TELA O RESULTADO QUE VIER DA FUNÇÃO CALLBACK
+
+CRIE UMA FUNÇÃO DE SOMA
+	- ELA DEVE RECEBER COMO ARGUMENTO DOIS NÚMEROS
+	- ELA DEVE RETORNAR A SOMA DOS DOIS NÚMEROS
+
+CRIE UMA FUÇÃO DE SUBTRAÇÃO
+CRIE UMA FUÇÃO DE MULTIPLICAÇÃO
+CRIE UMA FUÇÃO DE DIVISÃO
+
+==================================================================
+
+ESMODULES
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modularização</title>
+</head>
+<body>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
+-------------------------------------------------
+
+script.js
+
+import { multiplicacao, soma} from './aritmetica.js'
+import { calculadora } from './utils.js'
+
+calculadora(multiplicacao)
+
+calculadora(soma)
+
+--------------------------------------------------
+
+aritmetica.js
+
+export function soma(n1, n2) {
+    return n1 + n2
+}
+
+export function subtracao(n1, n2) {
+    return n1 - n2
+}
+
+export function multiplicacao(n1, n2) {
+    return n1 * n2
+}
+
+export function divisao(n1, n2) {
+    return n1 / n2
+}
+
+---------------------------------------------------
+
+utils.js
+
+export function calculadora(callback) {
+    const num1 = parseFloat(prompt("Digite o primeiro número: "))
+    const num2 = parseFloat(prompt("Digite o segundo número: "))
+
+    const resultado = callback(num1, num2)
+
+    document.write(resultado)
+}
+
+
+============================================================
+
+EX01
+
+import { adicionarUsuario, removerUsuario } from './usuarios.js'
+import { menu } from './interface.js'
+
+const usuarios = []
+
+
+const opcao = prompt("Digite a opção: ")
+
+if(opcao === "1") {
+menu()
+    adicionarUsuario(usuarios)
+} else if (opcao == "2") {
+    removerUsuario(usuarios)
+} else {
+    console.log("Opção inválida!")
+}
+
+--------------------------------------------
+
+interface.js
+
+export function menu() {
+    console.log(`
+[1] Adicionar usuário
+[2] Remover Usuário
+`)
+}
+
+------------------------------------------
+
+usuarios.js
+
+export function adicionarUsuario(lista) {
+    const nome = prompt("Digite seu nome: ")
+    
+    lista.push(nome)
+}
+
+export function removerUsuario(lista) {
+    const nome = prompt("Digite o nome a ser removido: ")
+
+    const indiceNome = usuarios.indexOf(nome)
+
+    if (indiceNome >= 0) {
+        lista.splice(indiceNome, 1)
+    }
+}

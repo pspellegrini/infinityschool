@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM I: Exercício 05</title>
+
+    <style>
+        .card {
+            width: 240px;
+            background-color: #FFF9FB;
+            border-radius: 16px;
+            padding: 8px;
+        }
+
+        .card > img {
+            width: 100%;
+        }
+
+        .card > strong {
+            color: #4B88A2;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Exercício 05</h1>
+    <p id="question">Crie um card.</p>
+    <div class="card">
+        <img src="Anker-313-Power-Bank.webp" alt="anker-313">
+        <hr>
+        <strong>R$ 99,90</strong>
+    </div>
+    <script>
+         function Card(urlImagem, preco) {
+            const elementoDiv = document.createElement("div")
+            elementoDiv.classList.add("card")
+
+            const elementoImagem = document.createElement("img")
+            elementoImagem.setAttribute("src", urlImagem)
+
+            const elementoHr = document.createElement("hr")
+
+            const elementoStrong = document.createElement("strong")
+            elementoStrong.textContent = preco
+
+            elementoDiv.append(elementoImagem, elementoHr, elementoStrong)
+
+            return elementoDiv
+        }
+
+        const arrayPrecos = ["1499,23", "2400,99", "1649,90", "4325,43", "43243,34"]
+
+        for (let preco of arrayPrecos) {
+            const card = Card("Anker-313-Power-Bank.webp", preco)
+
+            document.body.appendChild(card)
+        }
+    </script>
+
+</body>
+</html>

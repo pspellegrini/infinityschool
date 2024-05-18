@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM I: Exercício 03</title>
+
+    <style>
+        .grande {
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Exercício 03</h1>
+    <p id="question">Crie uma página que contenha uma imagem e utilizando o javascript, aletere a imagem e o tamanho dela, adicionando a classe "Grande".</p>
+    
+    <img id="image" src="oc6mirage.png" alt="oc6mirage" width="120">
+    <script>
+        const minhaImagem = document.getElementById("image")
+        minhaImagem.setAttribute("src", "Desafio_dos_farois.jfif")
+        minhaImagem.classList.add("grande")
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM I: Manipulação</title>
+</head>
+<body>
+
+    <ul id="lista">
+
+    </ul>
+    
+    <script>
+        const elementoLista = document.getElementById("lista")
+
+        const elementoItemLista = document.createElement("li")
+        elementoItemLista.textContent = "Not"
+
+        const elementoItemListaArthur = document.createElement("li")
+        elementoItemListaArthur.textContent = "Arthur"
+
+        // elementoLista.appendChild(elementoItemLista)
+        // elementoLista.appendChild(elementoItemListaArthur)
+        elementoLista.append(elementoItemLista, elementoItemListaArthur)
+    </script>
+</body>
+</html>

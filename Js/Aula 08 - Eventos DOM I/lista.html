@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM I: Lista</title>
+
+    <style>
+        .sem-ponto {
+            list-style: none;
+            color: #FF00FF;
+        }
+    </style>
+
+</head>
+<body>
+    <ul id="lista-nomes">
+
+    </ul>
+    <script>
+        const arrayNomes = ["Paulo", "Mikhail", "Tiago", "Caio", "Danilo"]
+        const elementoListaNome = document.getElemmentById ("lista-nomes")
+
+        for (let nome of arrayNomes) {
+            const itemLista = document.createElement("li")
+            itemLista.textContent = nome
+            itemLista.classList.add("sem-ponto")
+
+            elementoListaNomes.appendChild(itemLista)
+        }
+    </script>
+    
+</body>
+</html>

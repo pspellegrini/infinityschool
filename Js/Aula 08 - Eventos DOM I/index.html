@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM I</title>
+
+    <style>
+        .classe-azul {
+            background-color: blue;
+        }
+
+        .classe-vermelho {
+            color: red;
+        }
+
+        .classe-fonte {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="minha-classe">Título</h1>
+    <p id="paragrafo">Olá!</p>
+    <p class="minha-classe">Texto 2</p>
+
+    <p class="classe-vermelho" id="elemento-teste">Teste</p>
+
+    <img id="gatinho" src="gato1.jpg" width="128" alt="">
+
+    <form action="">
+        <p>dasijdoidsa</p>
+        <input name="nome" type="text">
+    </form>
+    
+    <script>
+         // Seletores
+         const meuElemento = document.getElementById("paragrafo")
+        const meusParagrafosPorTag = document.getElementsByTagName("p")
+        const meusParagrafosPorClasse = document.getElementsByClassName("minha-classe")
+        const meusParagrafosPorNome = document.getElementsByName("nome")
+        const paragrafoQuery = document.querySelector("p")
+        const paragrafosQuery = document.querySelectorAll("p")
+        console.log(paragrafosQuery)
+
+        const elementoImagem = document.getElementById("gatinho")
+        const elementoTeste = document.getElementById("elemento-teste")
+
+        // Manipulação
+        meuElemento.textContent = "Novo <br> texto"
+        // meuElemento.innerHTML = "Novo <br> texto"
+
+        meuElemento.style.backgroundColor = "#FF0000"
+
+        // elementoImagem.src = "gato2.avif"
+        // elementoImagem.setAttribute("src", "gato2.avif")
+
+        elementoTeste.classList.add('classe-azul')
+        elementoTeste.classList.remove('classe-vermelho')
+        elementoTeste.classList.toggle('classe-fonte')
+        elementoTeste.classList.toggle('classe-fonte')
+        
+        // console.log(meuElemento)
+    </script>
+</body>
+</html>
