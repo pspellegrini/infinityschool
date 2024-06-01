@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+</head>
+<body>
+    <h1 class="revisao">Revisão</h1>
+    <button onclick="dizerOla()">Clique aqui!</button>
+    <button id="botao">Clique aqui arquivo</button>
+    
+    <script>
+        function dizerOla() {
+            console.log("Olá!")
+        }
+
+        function saudacao() {
+            console.log("Bom dia!")
+        }
+
+        const botaoCliqueAqui = document.getElementById("botao")
+        botaoCliqueAqui.onclick = dizerOla
+
+        botaoCliqueAqui.addEventListener("click", dizerOla)
+        botaoCliqueAqui.addEventListener("click", saudacao)
+        botaoCliqueAqui.removeEventListener("click", dizerOla)
+
+        function container(valor) {
+            console.log(valor)
+        }
+
+        function retornar1() {
+            return 1
+        }
+
+        container(retornar1())
+    </script>
+</body>
+</html>

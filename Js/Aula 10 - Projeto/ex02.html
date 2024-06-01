@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+    <h1 class="exercicio">Atividade 02</h1>
+    <p>Crie um formulário com nome e sobrenome ao ser enviado o formulário devbe imprimir no console uma mensagem de saudacao para esse usuário.</p>
+
+    <form id="formulario">
+        <label for="campo-nome">Nome:</label>
+        <input type="text"  id="campo-nome" name="nome">
+
+        <label for="campo-sobrenome">Sobrenome:</label>
+        <input type="text"  id="campo-sobrenome" name="sobrenome">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const elementoForm = document.getElementById("formulario")
+
+        elementoForm.addEventListener("submit", (event) => {
+            event.preventDefault()
+
+            const nome = elementoForm["campo-nome"].value
+            const sobrenome = elementoForm["campo-sobrenome"].value
+
+            console.log(`Seja bem-vindo, ${nome} ${sobrenome}!`)
+        })
+    </script>
+</body>
+</html>

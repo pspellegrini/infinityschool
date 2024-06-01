@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+</head>
+<body>
+    <form id="formulario">
+        <input type="text" id="campo-nome"><br>
+        <input type="text" id="campo-email"><br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+    const elementoForm = document.getElementById("formulario")
+    elementoForm.addEventListener("submit", (event) =>{
+        event.preventDefault()
+        console.log(event.x)
+        })
+    </script>
+</body>
+</html>

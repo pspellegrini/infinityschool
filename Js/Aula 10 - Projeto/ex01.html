@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h1 class="exercicio">Atividade 01</h1>
+    <p>Crie uma página que possua uma entrada de dados para nome e um botão. Ao clicar no botão, o console deve imprimir o valor da entrada de dados.</p>
+    <label for="campo-nome">Nome:</label>
+    <input type="text"  id="campo-nome">
+    <button id="botao-imprimir">Imprimir</button>
+   
+    <script>
+        function imprimirValor(){
+            const nome = elementoEntradaNome.value
+            console.log(nome)
+        }
+
+        const elementoBotao = document.getElementById("botao-imprimir")
+        const elementoEntradaNome = document.getElementById("campo-nome")
+
+        elementoBotao.addEventListener("click", imprimirValor)
+    </script>
+</body>
+</html>
